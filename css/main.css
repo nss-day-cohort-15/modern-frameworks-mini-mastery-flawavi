@@ -1,0 +1,9 @@
+h3 {
+  text-align: center;
+}
+.arrangements {
+  height: 250px;
+  border: 1px dotted grey;
+  overflow-x: scroll;
+  margin: 2px;
+}

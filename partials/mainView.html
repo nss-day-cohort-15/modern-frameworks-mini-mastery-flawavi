@@ -1,9 +1,11 @@
 <div>
   <div ng-repeat="flower in flowers">
-    <div class="title">{{flower.title}}</div>
-    <div class="description">{{flower.description}}</div>
-    <div class="category">{{flower.category}}</div>
-    <div class="price">{{flower.price}}</div>
-    <br>
+    <div class="col-md-3 arrangements">
+      <h3>{{flower.category}}</h3>
+      <h6>"{{flower.title}}"</h6>
+      <p>{{flower.description}}</p>
+      <span>${{flower.price}}</span>
+      <br>
+    </div>
   </div>
 </div>
