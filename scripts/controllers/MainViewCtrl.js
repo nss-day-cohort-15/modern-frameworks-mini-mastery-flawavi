@@ -5,10 +5,10 @@ app.controller("MainViewCtrl", function($scope, FlowerFactory){
   $scope.message = "testing"
 
   $scope.getFlowers = function(){
-    FlowerFactory.getFlowersFromFireBase()
+    FlowerFactory.getFlowersFromFirebase()
     .then(function(data){
-      console.log(data, "data")
-      $scope.flowers = data.arrangements
+      $scope.flowers = data
+      console.log($scope.flowers, "flowers data")
     })
   }
   $scope.getFlowers();

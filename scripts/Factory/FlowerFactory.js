@@ -1,13 +1,12 @@
 "use strict"
 
-app.factory("FlowerFactory", function ($q, $http){
+app.factory("FlowerFactory", function ($q, $http, FirebaseURL){
   console.log("are we there yet")
 
-  let getFlowersFromFireBase = () => {
+  let getFlowersFromFirebase = () => {
     return $q((resolve, reject) => {
-      $http.get(`${FirebaseURL}.json`)
+      $http.get(`${FirebaseURL}`)
       .success((data) => {
-        console.log(data)
         resolve(data)
       })
       .error((error) => {
