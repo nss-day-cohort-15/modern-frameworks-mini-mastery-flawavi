@@ -1,6 +1,9 @@
 <div>
-  <div>{{message}}</div>
-  <div ng-show>
-    {{data}}
+  <div ng-repeat="flower in flowers">
+    <div class="title">{{flower.title}}</div>
+    <div class="description">{{flower.description}}</div>
+    <div class="category">{{flower.category}}</div>
+    <div class="price">{{flower.price}}</div>
+    <br>
   </div>
 </div>
